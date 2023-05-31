@@ -18,4 +18,5 @@ grep -E 'user[1-3]{3}:' teste.txt
 # return case insensitive full word of "of*" where * is alpha
 grep -iw -E 'of[[:alpha:]]' shakespear.txt
 
-
+# return ocurrence, displaying 4 lines before and 5 lines after
+curl https://quickref.me/find | grep -B 5 -C 4 'perm /a=x'
